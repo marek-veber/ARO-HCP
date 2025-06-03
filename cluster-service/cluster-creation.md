@@ -220,7 +220,7 @@ Replace `resource-group`, `vnet-name`, `nsg-name` and `subnet-name` with any val
     }
     EOF
 
-    cat cluster-test.json | ocm post /api/clusters_mgmt/v1/clusters
+    cat cluster-test.json | ocm post /api/aro_hcp/v1alpha1/clusters
     ```
 
     You should now have a cluster in OCM. You can verify using `ocm list clusters` or `ocm get cluster CLUSTERID`
@@ -249,7 +249,7 @@ cat <<EOF > nodepool-test.json
 }
 EOF
 
-cat nodepool-test.json | ocm post /api/clusters_mgmt/v1/clusters/$CLUSTER_ID/node_pools
+cat nodepool-test.json | ocm post /api/aro_hcp/v1alpha1/clusters/$CLUSTER_ID/node_pools
 ```
 
 You should now have a nodepool for your cluster in Cluster Service. You can verify using:
