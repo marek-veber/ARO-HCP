@@ -1,6 +1,6 @@
 module github.com/marek-veber/ARO-HCP/external
 
-go 1.24.0
+go 1.23.2
 
 require (
 	dario.cat/mergo v1.0.1
