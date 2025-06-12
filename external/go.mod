@@ -1,6 +1,6 @@
 module github.com/marek-veber/ARO-HCP/external
 
-go 1.24.0
+go 1.23.2
 
 require (
 	dario.cat/mergo v1.0.1
@@ -19,7 +19,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.35.0
 	go.uber.org/mock v0.5.2
 	gotest.tools v2.2.0+incompatible
-	k8s.io/apimachinery v0.33.1
+	k8s.io/apimachinery v0.32.3
 )
 
 require (
